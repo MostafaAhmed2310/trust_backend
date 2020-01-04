@@ -29,9 +29,10 @@ class SendMailable extends Mailable
      */
     public function build()
     {
-        return $this->from($this->data['from'])
+        return $this->from('trustmis91@gmail.com')
                     ->view('contact_us')
                     ->with([
+                        'email' => $this->data['from'],
                         'name' => $this->data['name'],
                         'msg'=> $this->data['msg'],
                         ]);

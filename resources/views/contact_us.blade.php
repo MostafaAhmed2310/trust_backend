@@ -1,3 +1,7 @@
 <div>
-    Hi, This is : {{ $msg }}------------- {{$name}}
+    name:{{$name}}
+    <br>
+    email: {{$email}}
+    <br>
+    message: {{ $msg }}
 </div>
